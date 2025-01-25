@@ -1,3 +1,4 @@
 .vscode
 build
 Josake.egg-info
+__pycache__
