@@ -17,9 +17,9 @@ LONG_DESC_TYPE = "text/markdown"
 
 INSTALL_REQUIRES = []
 
-my_c_extension = Extension(
-    'Josake.c_module.my_c_extension', 
-    sources=['c_module/main.c'],
+norms_and_errors = Extension(
+    'Josake.c_module.norms_and_errors', 
+    sources=['c_module/norms_and_errors.c'],
     include_dirs=[sysconfig.get_paths()['include']]
 )
 
@@ -36,5 +36,5 @@ setup(
     license = LICENSE,
     packages = find_packages(),
     include_package_data = True,
-    ext_modules=[my_c_extension],
+    ext_modules=[norms_and_errors],
 )

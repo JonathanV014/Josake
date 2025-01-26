@@ -1,6 +1,5 @@
 import Josake as jsk
 
+norm = jsk.Norm()
 
-analyzer = jsk.NumericalAnalysis()
-
-print(analyzer.hello_world())
+print(norm.one([1,-3, -2.449489743]))
